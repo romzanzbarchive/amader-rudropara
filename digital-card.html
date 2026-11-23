@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ডিজিটাল পরিচিতি কার্ড | আমাদের রুদ্রপাড়া</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<header class="topbar glass"><a href="index.html" class="brand">← আমাদের রুদ্রপাড়া</a></header>
+
+<main class="section tool">
+  <h2>ডিজিটাল পরিচিতি কার্ড</h2>
+  <p class="note">সব তথ্য ঐচ্ছিক। কিছুই কোনো সার্ভারে পাঠানো হয় না, সবকিছু আপনার ব্রাউজারেই হয়।</p>
+
+  <div class="tool-grid">
+    <form class="tool-form glass" onsubmit="return false">
+      <label>নাম<input id="dName" type="text" maxlength="60" placeholder="আপনার নাম"></label>
+      <label>পদবি / পেশা<input id="dDesig" type="text" maxlength="60" placeholder="যেমন: স্বেচ্ছাসেবক"></label>
+      <label>গ্রাম<input id="dVillage" type="text" maxlength="60" placeholder="গ্রামের নাম"></label>
+      <label>ছবি<input id="dPhoto" type="file" accept="image/*"></label>
+      <label>টেমপ্লেট
+        <select id="dTpl">
+          <option value="tpl-green">সবুজ</option>
+          <option value="tpl-navy">নীল</option>
+          <option value="tpl-gold">সোনালি</option>
+        </select>
+      </label>
+      <div class="btn-row">
+        <button type="button" class="btn primary" id="dDownload">PNG ডাউনলোড</button>
+        <button type="button" class="btn ghost-dark" id="dShare">শেয়ার করুন</button>
+      </div>
+    </form>
+
+    <div class="stage">
+      <div id="dCard" class="card-face digital tpl-green">
+        <div class="d-photo"><img id="dImg" alt="" hidden><span id="dInit"></span></div>
+        <div class="d-info">
+          <h3 id="pName"></h3>
+          <p id="pDesig"></p>
+          <p class="small" id="pVillage"></p>
+          <p class="disclaimer">ব্যক্তিগত ডিজিটাল পরিচিতি কার্ড — সরকারি পরিচয়পত্র নয়</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/cards.js"></script>
+</body>
+</html>

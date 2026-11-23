@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ফটো কার্ড | আমাদের রুদ্রপাড়া</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<header class="topbar glass"><a href="index.html" class="brand">← আমাদের রুদ্রপাড়া</a></header>
+
+<main class="section tool">
+  <h2>ফটো কার্ড</h2>
+
+  <div class="tool-grid">
+    <form class="tool-form glass" onsubmit="return false">
+      <label>টেমপ্লেট
+        <select id="pcTpl">
+          <option value="pc-greeting">শুভেচ্ছা কার্ড</option>
+          <option value="pc-birthday">জন্মদিনের কার্ড</option>
+          <option value="pc-eid">ঈদ শুভেচ্ছা</option>
+          <option value="pc-independence">স্বাধীনতা দিবস</option>
+          <option value="pc-victory">বিজয় দিবস</option>
+          <option value="pc-memory">গ্রামের স্মৃতি</option>
+          <option value="pc-announce">বিশেষ ঘোষণা</option>
+        </select>
+      </label>
+      <label>ছবি আপলোড<input id="pcPhoto" type="file" accept="image/*"></label>
+      <label>লেখা<textarea id="pcText" rows="3" maxlength="140" placeholder="আপনার বার্তা লিখুন"></textarea></label>
+      <label>লেখার রং<input id="pcColor" type="color" value="#ffffff"></label>
+      <label>ব্যাকগ্রাউন্ড রং<input id="pcBg" type="color" value="#0b2545"></label>
+      <div class="btn-row">
+        <button type="button" class="btn primary" id="pcDownload">PNG ডাউনলোড</button>
+        <button type="button" class="btn ghost-dark" id="pcShare">শেয়ার করুন</button>
+      </div>
+      <div class="btn-row">
+        <a class="btn ghost-dark" id="pcWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost-dark" id="pcFb" href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </form>
+
+    <div class="stage">
+      <div id="pcCard" class="card-face photo pc-greeting">
+        <img id="pcImg" alt="" hidden>
+        <h3 id="pcHead">শুভেচ্ছা</h3>
+        <p id="pcOut"></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/cards.js"></script>
+</body>
+</html>
