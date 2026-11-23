@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ফুটবল ক্লাব | আমাদের রুদ্রপাড়া</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo">রু</div>
+      <div class="brand-text"><h1>আমাদের রুদ্রপাড়া</h1><p>আমাদের গ্রাম, আমাদের পরিচয়</p></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="../index.html">হোম</a>
+      <a href="about.html">গ্রাম পরিচিতি</a>
+      <a href="community.html">আমাদের মানুষ</a>
+      <a href="gallery.html">ছবি ও স্মৃতি</a>
+      <a href="blood-donors.html">রক্তদাতা</a>
+      <a href="emergency.html">জরুরি সেবা</a>
+      <a href="football.html" class="active">ফুটবল ক্লাব</a>
+      <a href="contact.html">যোগাযোগ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle">🌙</button>
+      <div class="more-menu">
+        <button class="icon-btn" id="moreMenuBtn">⋮</button>
+        <div class="more-dropdown" id="moreDropdown">
+          <a href="notices.html">📢 নোটিশ বোর্ড</a>
+          <a href="expatriates.html">✈️ প্রবাসী ডিরেক্টরি</a>
+          <a href="education.html">📚 শিক্ষা ও চাকরি</a>
+          <a href="digital-card.html">🎨 ডিজিটাল কার্ড</a>
+          <a href="map.html">🗺️ মানচিত্র</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero football-hero football-theme">
+  <div class="container" style="position:relative;z-index:2">
+    <div class="football-badge">⚽ অফিসিয়াল ফুটবল ক্লাব</div>
+    <h1>RUDROPARA TOP10 FC</h1>
+    <p style="font-size:20px;color:rgba(255,255,255,0.9)">রুদ্রপাড়া টপটেন ফুটবল ক্লাব — আমাদের গর্ব</p>
+  </div>
+</section>
+
+<section class="section football-theme">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">ক্লাব পরিচিতি</span>
+      <h2>আমাদের ক্লাব সম্পর্কে</h2>
+    </div>
+    <div class="info-banner" style="background:rgba(16,185,129,0.08)">
+      ⚽ <div id="clubIntro" style="color:var(--text)"></div>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-body" style="text-align:center">
+          <img src="" id="coachImg" alt="কোচ" style="width:120px;height:120px;border-radius:50%;margin:0 auto 16px;object-fit:cover">
+          <h3 id="coachName"></h3>
+          <p id="coachRole"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body" style="text-align:center">
+          <img src="" id="managerImg" alt="ম্যানেজার" style="width:120px;height:120px;border-radius:50%;margin:0 auto 16px;object-fit:cover">
+          <h3 id="managerName"></h3>
+          <p id="managerRole"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt football-theme">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">খেলোয়াড়</span>
+      <h2>আমাদের দল</h2>
+      <p>রুদ্রপাড়া টপটেন ফুটবল ক্লাবের খেলোয়াড়বৃন্দ</p>
+    </div>
+    <div class="grid grid-4" id="playersGrid"></div>
+  </div>
+</section>
+
+<section class="section football-theme">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">ম্যাচ</span>
+      <h2>ম্যাচের সময়সূচি ও ফলাফল</h2>
+    </div>
+    <div id="matchList"></div>
+  </div>
+</section>
+
+<section class="section section-alt football-theme">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">সম্মাননা</span>
+      <h2>ট্রফি গ্যালারি ও অর্জন</h2>
+    </div>
+    <div class="grid grid-3" id="trophyList"></div>
+  </div>
+</section>
+
+<section class="section football-theme">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">গ্যালারি</span>
+      <h2>ফুটবল ফটো গ্যালারি</h2>
+    </div>
+    <div class="gallery-grid" id="footballGallery"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>আমাদের রুদ্রপাড়া</h3>
+        <p>আমাদের গ্রাম, আমাদের পরিচয়।</p>
+      </div>
+      <div class="footer-col">
+        <h4>প্রধান লিংক</h4>
+        <ul>
+          <li><a href="about.html">গ্রাম পরিচিতি</a></li>
+          <li><a href="community.html">আমাদের মানুষ</a></li>
+          <li><a href="gallery.html">গ্যালারি</a></li>
+          <li><a href="football.html">ফুটবল ক্লাব</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>সেবা</h4>
+        <ul>
+          <li><a href="blood-donors.html">রক্তদাতা</a></li>
+          <li><a href="emergency.html">জরুরি সেবা</a></li>
+          <li><a href="education.html">শিক্ষা ও চাকরি</a></li>
+          <li><a href="notices.html">নোটিশ বোর্ড</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আরও</h4>
+        <ul>
+          <li><a href="expatriates.html">প্রবাসী</a></li>
+          <li><a href="digital-card.html">ডিজিটাল কার্ড</a></li>
+          <li><a href="map.html">মানচিত্র</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৬ আমাদের রুদ্রপাড়া | সর্বস্বত্ব সংরক্ষিত।</p>
+      <p style="margin-top:6px">নির্মাণ ও পরিকল্পনায়: <span class="dev">রমজান জাইন</span></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="nav-mobile">
+  <ul>
+    <li><a href="../index.html"><span class="nav-icon">🏠</span>হোম</a></li>
+    <li><a href="about.html"><span class="nav-icon">🏘️</span>পরিচিতি</a></li>
+    <li><a href="gallery.html"><span class="nav-icon">📸</span>গ্যালারি</a></li>
+    <li><a href="football.html" class="active"><span class="nav-icon">⚽</span>ফুটবল</a></li>
+    <li><a href="#" onclick="document.getElementById('moreMenuBtn').click(); return false;"><span class="nav-icon">⋮</span>মেনু</a></li>
+  </ul>
+</nav>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/football.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('clubIntro').textContent = footballClub.intro;
+  document.getElementById('coachImg').src = resolveImg(footballClub.coach.image);
+  document.getElementById('coachName').textContent = footballClub.coach.name;
+  document.getElementById('coachRole').textContent = footballClub.coach.role;
+  document.getElementById('managerImg').src = resolveImg(footballClub.manager.image);
+  document.getElementById('managerName').textContent = footballClub.manager.name;
+  document.getElementById('managerRole').textContent = footballClub.manager.role;
+});
+</script>
+</body>
+</html>
