@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের মানুষ | আমাদের রুদ্রপাড়া</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo">রু</div>
+      <div class="brand-text"><h1>আমাদের রুদ্রপাড়া</h1><p>আমাদের গ্রাম, আমাদের পরিচয়</p></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="../index.html">হোম</a>
+      <a href="about.html">গ্রাম পরিচিতি</a>
+      <a href="community.html" class="active">আমাদের মানুষ</a>
+      <a href="gallery.html">ছবি ও স্মৃতি</a>
+      <a href="blood-donors.html">রক্তদাতা</a>
+      <a href="emergency.html">জরুরি সেবা</a>
+      <a href="football.html">ফুটবল ক্লাব</a>
+      <a href="contact.html">যোগাযোগ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle">🌙</button>
+      <div class="more-menu">
+        <button class="icon-btn" id="moreMenuBtn">⋮</button>
+        <div class="more-dropdown" id="moreDropdown">
+          <a href="notices.html">📢 নোটিশ বোর্ড</a>
+          <a href="expatriates.html">✈️ প্রবাসী ডিরেক্টরি</a>
+          <a href="education.html">📚 শিক্ষা ও চাকরি</a>
+          <a href="digital-card.html">🎨 ডিজিটাল কার্ড</a>
+          <a href="map.html">🗺️ মানচিত্র</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">হোম</a> / আমাদের মানুষ</div>
+    <h1>আমাদের মানুষ</h1>
+    <p>গ্রামের বিশিষ্ট ব্যক্তিবর্গ, শিক্ষাবিদ, সমাজসেবক ও উদ্যোক্তাদের পরিচিতি</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="info-banner">
+      🔒 <div><strong>গোপনীয়তা সতর্কতা:</strong> কারো ব্যক্তিগত তথ্য প্রকাশের আগে অবশ্যই তার সম্মতি নিন। এখানে প্রদর্শিত সব তথ্য স্যাম্পল।</div>
+    </div>
+    <div class="filter-bar" id="peopleFilter"></div>
+    <div class="grid grid-3" id="peopleGrid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>আমাদের রুদ্রপাড়া</h3>
+        <p>আমাদের গ্রাম, আমাদের পরিচয়।</p>
+      </div>
+      <div class="footer-col">
+        <h4>প্রধান লিংক</h4>
+        <ul>
+          <li><a href="about.html">গ্রাম পরিচিতি</a></li>
+          <li><a href="community.html">আমাদের মানুষ</a></li>
+          <li><a href="gallery.html">গ্যালারি</a></li>
+          <li><a href="football.html">ফুটবল ক্লাব</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>সেবা</h4>
+        <ul>
+          <li><a href="blood-donors.html">রক্তদাতা</a></li>
+          <li><a href="emergency.html">জরুরি সেবা</a></li>
+          <li><a href="education.html">শিক্ষা ও চাকরি</a></li>
+          <li><a href="notices.html">নোটিশ বোর্ড</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আরও</h4>
+        <ul>
+          <li><a href="expatriates.html">প্রবাসী</a></li>
+          <li><a href="digital-card.html">ডিজিটাল কার্ড</a></li>
+          <li><a href="map.html">মানচিত্র</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৬ আমাদের রুদ্রপাড়া | সর্বস্বত্ব সংরক্ষিত।</p>
+      <p style="margin-top:6px">নির্মাণ ও পরিকল্পনায়: <span class="dev">রমজান জাইন</span></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="nav-mobile">
+  <ul>
+    <li><a href="../index.html"><span class="nav-icon">🏠</span>হোম</a></li>
+    <li><a href="about.html"><span class="nav-icon">🏘️</span>পরিচিতি</a></li>
+    <li><a href="gallery.html"><span class="nav-icon">📸</span>গ্যালারি</a></li>
+    <li><a href="football.html"><span class="nav-icon">⚽</span>ফুটবল</a></li>
+    <li><a href="#" onclick="document.getElementById('moreMenuBtn').click(); return false;"><span class="nav-icon">⋮</span>মেনু</a></li>
+  </ul>
+</nav>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('peopleGrid');
+  const filter = document.getElementById('peopleFilter');
+  const cats = ['সব', ...new Set(people.map(p => p.category))];
+  let currentCat = 'সব';
+
+  filter.innerHTML = cats.map(c =>
+    `<button class="filter-btn ${c === 'সব' ? 'active' : ''}" data-cat="${c}">${c}</button>`
+  ).join('');
+
+  function render() {
+    const list = currentCat === 'সব' ? people : people.filter(p => p.category === currentCat);
+    grid.innerHTML = list.map(p => `
+      <div class="card">
+        <img src="${resolveImg(p.image)}" alt="${p.name}" class="card-img">
+        <div class="card-body">
+          <span class="notice-tag">${p.category}</span>
+          <h3>${p.name}</h3>
+          <p>${p.bio}</p>
+          <div class="card-meta">
+            <span>💼 ${p.profession}</span>
+            <span>📍 ${p.address}</span>
+            ${p.contact ? `<span>📞 ${p.contact}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  filter.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    filter.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCat = btn.dataset.cat;
+    render();
+  });
+  render();
+});
+</script>
+</body>
+</html>
